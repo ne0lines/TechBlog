@@ -51,7 +51,7 @@
  }
 
 
-div.input-text{
+div:has(> input[type=text]){
     width:100%;
     height:40px;
     background-color:#F3F4F6;
@@ -176,7 +176,7 @@ section.hero{
         font-size:20px;
         font-weight:400;
     }
-    >div.input-text{
+    >div:has(> input[type=text]){
         max-width:480px;
     }
 }
@@ -436,7 +436,7 @@ aside{
         >p{
             width:100%; 
         }
-        >div.input-text{
+        >div:has(> input[type=text]){
             width:100%;
             >input{
                 width:100%;
