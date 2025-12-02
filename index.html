@@ -34,19 +34,19 @@
     </section>
     <div>
         <main>
-            <section class="featured-articles">
+            <section class="featured-articles" aria-label="Featured Articles">
                 <header>
                     <h2>Featured Articles</h2>
                     <p>Latest insights and tutorials from our expert writers</p>
                 </header>
-                <article>
+                <article aria-labelledby="featured-h1">
                     <header>
                         <p><img src="assets/img/articles/a10afdc21183eaccd6b3d23f56c7f38dd1c92bb0.png" alt="Modern CSS Grid techniques for responsive design" loading="lazy" /></p>
                         <div>
                             <span class="web-development">Web Development</span>
                             <time datetime="2024-01-15">January 15, 2024</time>
                         </div>
-                        <a href="#"><h3>Modern CSS Grid techniques for responsive design</h3></a>
+                        <a href="#"><h3 id="featured-h1">Modern CSS Grid techniques for responsive design</h3></a>
                     </header>
                     <p>Learn how to create flexible and responsive layouts using the latest CSS Grid features. This comprehensive guide covers everything from basic grid concepts to advanced techniques.</p>
                     <footer>
@@ -62,14 +62,14 @@
                         </div>
                     </footer>
                 </article>
-                <article>
+                <article aria-labelledby="featured-h2">
                     <header>
                         <p><img src="assets/img/articles/a44fb8b17eb05037039851ab144cb5be9bacdcc3.png" alt="Building accessible web applications: a complete guide" loading="lazy" /></p>
                         <div>
                             <span class="accessibility">Accessibility</span>
                             <time datetime="2024-01-12">January 12, 2024</time>
                         </div>
-                        <a href="#"><h3>Building accessible web applications: a complete guide</h3></a>
+                        <a href="#"><h3 id="featured-h2">Building accessible web applications: a complete guide</h3></a>
                     </header>
                     <p>Discover essential techniques for creating inclusive web experiences. From semantic HTML to ARIA attributes, learn how to make your applications accessible to all users.</p>
                     <footer>
@@ -85,7 +85,7 @@
                         </div>
                     </footer> 
                 </article>
-                <footer>
+                <footer aria-label="Pagination">
                     <nav>
                         <a href="/" class="muted"></a>
                         <a href="/p/1" class="current">1</a>
@@ -97,7 +97,7 @@
             </section>
         </main>
         <aside>
-            <section class="categories">
+            <section class="categories" aria-label="Categories">
                 <h4>Categories</h4>
                 <ul>
                     <li><a href="/web-development">Web Development</a><span>(12)</span></li>
@@ -106,7 +106,7 @@
                     <li><a href="/javascript">JavaScript</a><span>(15)</span></li>
                 </ul>
             </section>
-            <section class="newsletter">
+            <section class="newsletter" aria-label="Newsletter">
                 <h4>Stay updated</h4>
                 <p>Get the latest articles delivered to your inbox weekly.</p>
                 <div class="input-text">
@@ -114,7 +114,7 @@
                 </div>
                 <button>Subscribe</button>
             </section>
-            <section class="popular-posts">
+            <section class="popular-posts" aria-label="Popular posts">
                 <h4>Popular Posts</h4>
                 <ul>
                     <li>
@@ -131,7 +131,7 @@
     </div>
     <footer>
         <div>
-            <section>
+            <section aria-label="Blog description and social media links">
                 <h4>TechBlog</h4>
                 <p>Sharing knowledge and insights about web development, design, and technology.</p>
                 <span>
@@ -140,7 +140,7 @@
                     <a href="/github"><i class="github-icon"></i></a> 
                 </span>
             </section>
-            <section>
+            <section aria-label="Quick links">
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="/about-us">About Us</a></li>
@@ -149,7 +149,7 @@
                     <li><a href="/terms-of-service">Terms of Service</a></li>
                 </ul>
             </section>
-            <section>
+            <section aria-label="Blog categories">
                 <h4>Categories</h4>
                 <ul>
                     <li><a href="/web-development">Web Development</a></li>
@@ -158,7 +158,7 @@
                     <li><a href="/javascript">JavaScript</a></li>
                 </ul>
             </section>
-            <section>
+            <section aria-label="Contact info">
                 <h4>Contact Info</h4>
                 <ul>
                     <li><i class="email-icon"></i>hello@techblog.com</li>
@@ -166,7 +166,7 @@
                 </ul>
             </section>
         </div>
-        <section>
+        <section aria-label="Footer footer">
             <span>&copy; 2025 TechBlog. All rights reserved.</span>
             <span>Made with ❤️ for the web community</span>
         </section>
