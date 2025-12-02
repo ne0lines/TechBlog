@@ -29,7 +29,7 @@
         <p>Discover the latest insights in web development, design, and technology</p>
         <div class="input-text">
             <i class="search-icon"></i>
-            <input type="text" placeholder="Search articles..." />
+            <input type="text" placeholder="Search articles..." aria-label="Search articles" />
         </div>
     </section>
     <div>
@@ -87,11 +87,11 @@
                 </article>
                 <footer aria-label="Pagination">
                     <nav>
-                        <a href="/" class="muted"></a>
-                        <a href="/p/1" class="current">1</a>
-                        <a href="/p/2">2</a>
-                        <a href="/p/3">3</a>
-                        <a href="/p/4"></a>
+                        <a href="/"  title="Previous page (unavailable)"class="muted"></a>
+                        <a href="/p/1" title="Page 1" class="current">1</a>
+                        <a href="/p/2" title="Page 2">2</a>
+                        <a href="/p/3" title="Page 3">3</a>
+                        <a href="/p/4" title="Next page"></a>
                     </nav>
                 </footer>
             </section>
@@ -110,9 +110,9 @@
                 <h4>Stay updated</h4>
                 <p>Get the latest articles delivered to your inbox weekly.</p>
                 <div class="input-text">
-                    <input type="text" placeholder="your@email.com" />
+                    <input type="text" placeholder="your@email.com" aria-label="Email address" />
                 </div>
-                <button>Subscribe</button>
+                <button aria-label="Click to subscribe">Subscribe</button>
             </section>
             <section class="popular-posts" aria-label="Popular posts">
                 <h4>Popular Posts</h4>
@@ -135,9 +135,9 @@
                 <h4>TechBlog</h4>
                 <p>Sharing knowledge and insights about web development, design, and technology.</p>
                 <span>
-                    <a href="/x"><i class="x-icon"></i></a>
-                    <a href="/linkedin"><i class="linkedin-icon"></i></a>
-                    <a href="/github"><i class="github-icon"></i></a> 
+                    <a href="/x" title="X (formerly known as Twitter)"><i class="x-icon"></i></a>
+                    <a href="/linkedin" title="LinkedIn"><i class="linkedin-icon"></i></a>
+                    <a href="/github" title="GitHub"><i class="github-icon"></i></a> 
                 </span>
             </section>
             <section aria-label="Quick links">
