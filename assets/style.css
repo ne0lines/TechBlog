@@ -104,7 +104,14 @@ button{
 }
 
 a:hover{
-    text-decoration:underline; 
+    text-decoration:underline;
+
+    main>section>article>header &{
+        text-decoration:underline;
+    }
+    body>footer &{
+        color:#FFFFFF;
+    }
 }
 
 h2{
