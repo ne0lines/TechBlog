@@ -348,17 +348,19 @@ section[aria-label="Featured Articles"]>article{
         display:flex;
         flex-direction:row;
         justify-content:space-between;
-        align-items:center;
-        >div{
+        align-items:first baseline;
+        >a{
             display:flex;
             flex-direction: row; 
             gap:12px;
-            padding: var(--padding-section);
+            margin: var(--padding-section);
+            text-decoration:none;
             >img{
                 width:40px;
                 height:40px;
                 border-radius:50%;
                 object-fit:cover;
+                margin-right: var(--gap-small)
             }
             >span{
                 display:flex;
@@ -377,23 +379,23 @@ section[aria-label="Featured Articles"]>article{
                     }
                 }
             }
-            &:last-of-type{
-                padding: var(--padding-section);
-                display:flex;
-                gap:1px;
-                font-size:14px;
-                font-weight:400;
-                color:var(--muted-text-color);
-                >i{
-                    width:18px;
-                    height:auto;
-                    display:inline-block;
-                    margin-right:2px;
-                    background-color:var(--muted-text-color); 
-                    &.time-icon{ 
-                        -webkit-mask: var(--icon-clock) no-repeat center / contain;
-                        mask: var(--icon-clock) no-repeat center / contain;
-                    }
+        }
+        div{
+            display:flex;
+            margin: var(--padding-section);
+            gap:1px;
+            font-size:14px;
+            font-weight:400;
+            color:var(--muted-text-color);
+            >i{
+                width:18px;
+                height:auto;
+                display:inline-block;
+                margin-right:2px;
+                background-color:var(--muted-text-color); 
+                &.time-icon{ 
+                    -webkit-mask: var(--icon-clock) no-repeat center / contain;
+                    mask: var(--icon-clock) no-repeat center / contain;
                 }
             }
         }
