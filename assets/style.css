@@ -109,6 +109,10 @@ a:hover{
     main>section>article>header &{
         text-decoration:underline;
     }
+    main>section>article>footer & img{
+        outline:1px solid var(--color-muted);
+        outline-offset:2px;
+    }
     body>footer &{
         color:#FFFFFF;
     }
