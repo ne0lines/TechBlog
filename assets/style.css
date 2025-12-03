@@ -40,7 +40,7 @@
     --gap-small: 8px;
 
     --icon-search: url("https://api.iconify.design/material-symbols:search.svg");
-    --icon-notifications: url("https://api.iconify.design/material-symbols:notifications.svg");
+    --icon-notifications: url("https://api.iconify.design/material-symbols:notifications.svg"); 
     --icon-arrow-back: url("https://api.iconify.design/material-symbols:arrow-back-ios.svg");
     --icon-arrow-forward: url("https://api.iconify.design/material-symbols:arrow-forward-ios.svg");
     --icon-clock: url("https://api.iconify.design/material-symbols:nest-clock-farsight-analog-outline.svg");
@@ -114,16 +114,44 @@ h2{
         color:var(--body-header-color)
 }
 
+:focus-visible:not(input, textarea, select),
+div:has(> input[type="text"]):focus-within {
+    border-radius: var(--border-radius);
+    outline: 3px dashed var(--accent-color);
+    outline-offset: 3px;
+    animation: borderPulse .5s infinite alternate;
+}
 
+input[type="text"]:focus-visible {
+    outline: none;
+}
+
+:is(
+    section[aria-label="Newsletter"],
+    body > section:first-of-type,
+    body > footer
+) :is(
+    div:has(> input[type="text"]):focus-within,
+    button:focus-visible,
+    a:focus-visible
+) {
+    outline-color: #ffffff;
+    outline-offset: 5px;
+}
+
+@keyframes borderPulse {
+  to { outline-color: transparent; }
+}
 
 body{
     font-family: var(--font-family);
     color: var(--body-text-color);
     margin: var(--margin-center);
 }
+
 body>header{
     max-width:1280px;
-    height:72px;
+     height:72px;
     margin: var(--margin-center);
     padding:0 var(--padding-header);
     display:flex;
@@ -220,6 +248,7 @@ section[aria-label="Featured Articles"]{
             gap: var(--gap-small);
             justify-content:center;
             >a{
+                display:inline-block;
                 height:auto;
                 border-radius: 6px;
                 padding:10px 12px;
@@ -228,7 +257,6 @@ section[aria-label="Featured Articles"]{
                 &:first-child{
                     -webkit-mask: var(--icon-arrow-back) no-repeat center / contain;
                     mask: var(--icon-arrow-back) no-repeat center / contain;
-                    display:inline-block;
                     background-color: var(--muted-text-color); 
                     background-position: 50% 50%; 
                 }
@@ -242,7 +270,6 @@ section[aria-label="Featured Articles"]{
                 &:last-child{
                     -webkit-mask: var(--icon-arrow-forward) no-repeat center / contain;
                     mask: var(--icon-arrow-forward) no-repeat center / contain;
-                    display:inline-block;
                     background-color: var(--body-text-color);
                     background-position: 50% 50%;
                 }
@@ -275,7 +302,7 @@ section[aria-label="Featured Articles"]>article{
             gap:16px;
             padding: var(--padding-section);
 
-            >span{
+            >a{
                 font-size:14px;
                 line-height:100%;
                 font-weight:500;
@@ -291,6 +318,9 @@ section[aria-label="Featured Articles"]>article{
                     background-color:var(--pill-bg);
                     color:var(--pill-text-accessibility);
                 }
+                &:hover{
+                    text-decoration:none;
+                }
             }
             >time{
                 font-size:14px;
@@ -301,8 +331,8 @@ section[aria-label="Featured Articles"]>article{
         >a{
             display:inline-block;
             text-decoration:none;
-            padding:0 var(--padding-section);
-            color:var(--body-header-color);
+            margin:0 var(--padding-section);
+            color:var(--body-header-color); 
             >h3{
                 font-size:24px;
                 line-height:30px;
@@ -411,7 +441,8 @@ aside{
                 margin-right:12px;
             }
             a{
-                display:block; 
+                display:block;
+                overflow:hidden;
                 font-size: 14px;
                 font-weight: 500;
             }
