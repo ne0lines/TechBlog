@@ -1,20 +1,20 @@
 :root{
     --font-family:Inter, sans-serif;
 
-    --color-black: hsla(0, 0%, 0%, 1);
-    --color-text-primary: hsla(217, 10%, 33%, 1);
-    --color-accent: hsla(221, 83%, 53%, 1);
-    --color-accent-dark: hsla(222, 47%, 32%, 1);
-    --color-light-gray: hsla(0, 0%, 93%, 1);
-    --color-muted: hsla(220, 9%, 46%, 1);
-    --color-border: hsla(210, 18%, 90%, 1);
-    --color-input: hsla(235, 9%, 70%, 1);
-    --color-input-bg: hsla(210, 20%, 96%, 1);
-    --color-input-text-active: hsla(0, 0%, 40%, 1);
-    --color-footer-bg: hsla(222, 47%, 11%, 1);
-    --color-white: hsla(0, 0%, 100%, 1);
-    --color-accessibility-text: hsla(135, 62%, 24%, 1);
-    --color-footer-hr: hsla(216, 15%, 32%, 1);
+    --color-black: hsla(0 0% 0% / 1);
+    --color-text-primary: hsla(217 10% 33% / 1);
+    --color-accent: hsla(221 83% 53% / 1);
+    --color-accent-dark: hsla(222 47% 32% / 1);
+    --color-light-gray: hsla(0 0% 93% / 1);
+    --color-muted: hsla(220 9% 46% / 1);
+    --color-border: hsla(210 18% 90% / 1);
+    --color-input: hsla(235 9% 70% / 1);
+    --color-input-bg: hsla(210 20% 96% / 1);
+    --color-input-text-active: hsla(0 0% 40% / 1);
+    --color-footer-bg: hsla(222 47% 11% / 1);
+    --color-white: hsla(0 0% 100% / 1);
+    --color-accessibility-text: hsla(135 62% 24% / 1);
+    --color-footer-hr: hsla(216 15% 32% / 1);
 
     --accent-gradient: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-dark) 100%);
 
