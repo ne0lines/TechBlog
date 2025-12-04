@@ -530,36 +530,40 @@ body>footer>div{
     >section{
         flex:1;
         font-size: var(--font-size-xs); 
-    }
-    >section>p{
-        text-wrap:pretty;
-        line-height:1.5;
-        padding: var(--padding-small) 0; 
-    }
-    >section>span{
-        margin-top:16px;
-        display:flex;
-        gap:16px;
-        
-        >a {
-            >i{
-                width:20px;
-                height:16px;
-                margin-right:1px;
-                margin-top:2px;
-                display:inline-block;
-                background-color:var(--color-muted);  
-                &.x-icon{ 
-                    -webkit-mask: var(--icon-x) no-repeat center / contain;
-                    mask: var(--icon-x) no-repeat center / contain;
-                }
-                &.linkedin-icon{ 
-                    -webkit-mask: var(--icon-linkedin) no-repeat center / contain;
-                    mask: var(--icon-linkedin) no-repeat center / contain;
-                }
-                &.github-icon{ 
-                    -webkit-mask: var(--icon-github) no-repeat center / contain;
-                    mask: var(--icon-github) no-repeat center / contain;
+        >p{
+            color:var(--color-input);
+            text-wrap:pretty;
+            line-height:1.5;
+            padding: var(--padding-small) 0; 
+        }
+        >span,ul li{
+            margin-top:16px;
+            display:flex;
+            gap:16px;
+            >a {
+                color:var(--color-input);
+                >i{
+                    width:20px;
+                    height:16px;
+                    margin-right:1px;
+                    margin-top:2px;
+                    display:inline-block;
+                    background-color:var(--color-input);  
+                    &.x-icon{ 
+                        -webkit-mask: var(--icon-x) no-repeat center / contain;
+                        mask: var(--icon-x) no-repeat center / contain;
+                    }
+                    &.linkedin-icon{ 
+                        -webkit-mask: var(--icon-linkedin) no-repeat center / contain;
+                        mask: var(--icon-linkedin) no-repeat center / contain;
+                    }
+                    &.github-icon{ 
+                        -webkit-mask: var(--icon-github) no-repeat center / contain;
+                        mask: var(--icon-github) no-repeat center / contain;
+                    }
+                    &:hover{
+                        background-color:var(--color-white);
+                    }
                 }
             }
         }
