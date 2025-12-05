@@ -71,6 +71,7 @@
 }
 
 /* Form elements */
+
 div:has(> input[type=text]){
     width:100%;
     height:40px;
@@ -517,7 +518,6 @@ aside{
     }
     >section[aria-label="Newsletter"]{
         display:flex;
-        gap: 16px;
         flex-direction: column; 
         background-color:var(--color-accent);
         border-radius: var(--border-radius);
@@ -530,15 +530,10 @@ aside{
             width:100%; 
         }
         >div:has(> input[type=text]){
-            width:100%;
-            >input{
-                width:100%;
-                color:var(--color-input);
-                font-size: var(--font-size-sm);
-            }
+            margin-top:16px;
+            margin-bottom:16px;
         }
         >button{
-            width:100%;
             display: flex;
             align-items: center;
             justify-content: center;
