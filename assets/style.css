@@ -109,7 +109,7 @@ div:has(> input[type="text"]):focus-within {
     border-radius: var(--border-radius);
     outline: 3px dashed var(--color-accent);
     outline-offset: 3px;
-    animation: borderPulse .5s infinite alternate;
+    animation: borderPulse .5s 5 alternate;
 }
 
 input[type="text"]:focus-visible {
@@ -475,6 +475,9 @@ aside{
     display:flex;
     flex-direction: column;
     gap:24px;
+
+    /* Categories & Popular Posts */
+
     >section[aria-label="Categories"], >section[aria-label="Popular posts"]{
         border-radius: var(--border-radius); 
         padding: var(--padding-section);
@@ -516,6 +519,9 @@ aside{
             }
         }
     }
+
+    /* Newsletter Signup */
+
     >section[aria-label="Newsletter"]{
         display:flex;
         flex-direction: column; 
