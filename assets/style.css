@@ -3,6 +3,7 @@
     --mobile-max-width: 820px;
 
     --font-family:'Inter', 'Sans-Serif';
+
     --color-accent-hue: 221;
 
     --color-accent: hsl(var(--color-accent-hue) 83% 53% / 1);
@@ -24,14 +25,16 @@
     --color-web-development-text: hsl(221 60% 25% / 1);
     --color-accessibility-text: hsl(135 60% 25% / 1);
 
-
     --pill-border-radius: 16px;
 
     --padding-section: 24px;
     --padding-header: 32px;
     --padding-small: 8px;
+    
     --margin-center: 0 auto;
+    
     --border-radius: 8px;
+
     --gap-large: 24px;
     --gap-medium: 20px;
     --gap-small: 8px;
@@ -311,14 +314,15 @@ section[aria-label="Featured Articles"]{
                     -webkit-mask: var(--icon-arrow-back) no-repeat center / contain;
                     mask: var(--icon-arrow-back) no-repeat center / contain;
                     background-color: var(--color-muted); 
-                    background-position: 50% 50%; 
+                    background-position: 50% 50%;
                 }
                 &.current{
                     background-color: var(--color-accent);
                     color: var(--color-white);
                 }
                 &.muted{
-                    color:var(--color-muted); 
+                    color:var(--color-muted);
+                    cursor: not-allowed;
                 }
                 &:last-child{
                     -webkit-mask: var(--icon-arrow-forward) no-repeat center / contain;
